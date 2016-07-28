@@ -1,0 +1,906 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ECECF0;
+  font-family: FuturaBT-Book, "Trebuchet MS", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 0.87em;
+  letter-spacing: -0.s5px;
+}
+
+p {
+  text-align: justify;
+}
+
+b {
+  font-family: FuturaBT-Medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #093C71;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.container {
+  width: 883px;
+  margin: 0 auto;
+}
+
+div.header {
+  height: 94px;
+  border: 1px solid #576542;
+  background-color: #093C71;
+  padding: 0;
+  margin: 0;
+}
+
+div.mainBody {
+  min-height: 500px;
+  border-top: 10px solid #ECECF0;
+  background: #FFFEFE url('../images/bg_content.png') repeat-x bottom left;
+}
+
+div.subpageContent {
+  width: 565px;
+  float: left;
+}
+
+div.subpageContentWide {
+  float: left;
+}
+
+div.subpageSidebar {
+  width: 180px;
+  padding: 39px 0 0 20px;
+  float: left;
+}
+
+div.content {
+  width: 765px;
+  padding: 47px 0 20px 0;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+
+div.homeCallout {
+  width: 186px;
+  min-height: 180px;
+  margin: 17px 0 0 7px;
+  float: left;
+  background-color: #D2D4BF;
+}
+
+div.sidebarCallout {
+  width: 179px;
+  background-color: #D2D4BF;
+}
+
+div.homeCallout a {
+  color: black;
+}
+
+div.homeCallout#firmNews {
+  margin-left: 0;
+}
+
+div.calloutBody {
+  padding: 10px;
+  line-height: 105%;
+}
+
+div.calloutBody p {
+  margin: 2px 0 0 0;
+  padding: 0;
+  text-align: left;
+}
+
+div.homeCallout#socialMedia p {
+  margin-bottom: 9px;
+  font-family: FuturaBT-Medium;
+  font-weight: normal;
+}
+
+div.homeCallout#socialMedia a:link, div.homeCallout#socialMedia a:visited {
+  text-decoration: none;
+}
+
+div.homeCallout#socialMedia a:hover {
+  text-decoration: underline;
+}
+
+div.calloutBody ul {
+  list-style-image: url('../images/bullet.png');
+  padding-left: 22px;
+  margin: 1px 0 0 0;
+}
+
+div.calloutBody p a, div.calloutBody ul a {
+  text-decoration: underline;
+}
+
+div.sidebarCallout p a {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+div.calloutBody ul li {
+  margin-bottom: 11px;
+}
+
+div.sidebarCallout p {
+  padding: 10px 18px 15px 18px;
+  line-height: 105%;
+  margin: 0;
+}
+
+div.subColumn {
+  width: 47%;
+  margin-left: 6%;
+  float: left;
+}
+
+div.subColumn#left {
+  margin-left: 0;
+}
+
+
+div.locationBlock {
+  width: 183px;
+  float: left;
+  margin: 5px 0 0 11px;
+  padding-top: 70px;
+}
+
+#block1 {
+  margin-left: 0;
+}
+
+div.locationBlock h4 {
+  height: 30px;
+  line-height: 30px;
+  background-color: #093C71;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 15px;
+  margin-top: 0;
+  margin-bottom: -11px;
+}
+
+div.locationBlock p {
+  background-color: #E3E6D1;
+  padding: 20px 15px;
+}
+
+div.footer {
+  height: 88px;
+  border: 1px solid #576542;
+  background-color: #093C71;
+  color: white;
+  font-size: 0.7em;
+  clear: both;
+}
+
+div.footer a {
+  color: white;
+}
+
+div.footerNav {
+  clear: both;
+  width: 764px;
+  margin: 0 auto;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+
+div.copyright {
+  width: 50%;
+  float: left;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+ul.navbar {
+  list-style-type: none;
+  width: 769px;
+  height: 103px;
+  padding: 0;
+  margin: -1px auto 0 auto;
+}
+
+ul.navbar li {
+  display: block;
+  width: 119px;
+  height: 103px;
+  float: left;
+  margin: 0 0 0 11px;
+  padding: 0;
+  background: transparent url('../images/bg_nav.png') repeat-x top left;
+}
+
+ul.navbar li.current-menu-item, ul.navbar li.current-page-ancestor {
+	background: transparent url('../images/bg_nav_current.png') repeat-x top left;
+}
+
+ul.navbar li:first-child {
+  margin-left: 0;
+}
+
+ul.navbar li a {
+  display: block;
+  width: 119px;
+  height: 48px;
+  text-align: center;
+  padding-top: 55px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+ul.locations {
+  width: 764px;
+  list-style-type: none;
+  margin: 10px auto;
+  padding: 0;
+}
+
+ul.locations li {
+  width: 25%;
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  padding-bottom: 9px;
+}
+
+ul.locations li:nth-child(3) {
+  text-align: center;
+}
+
+ul.locations li:last-child {
+  text-align: right;
+}
+
+div.footerNav ul {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.footerNav ul li {
+  display: block;
+  float: left;
+  text-transform: uppercase;
+}
+
+div.footerNav ul li:before {
+  content: '  //  ';
+  padding: 0 8px;
+}
+
+div.footerNav ul li:first-child:before {
+  content: "";
+  padding: 0;
+}
+
+div.footerNav ul li.current-menu-item a {
+  color: #BDC491;
+}
+
+h1 {
+  width: 765px;
+  height: 31px;
+  background: transparent url('../images/logo.png') no-repeat top left !important;
+  margin: 0 0 17px 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #093C71;
+  margin: 15px 0 0 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-family: FuturaBT-Medium;
+  font-weight: normal;
+}
+
+h3.attorneys {
+  font-size: 1.0em;
+  color: #093C71;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #093C71;
+  margin: 15px 0 -10px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h4.attorneys {
+  font-family: FuturaBT-Medium;
+  text-transform: none;
+}
+
+p {
+  margin-top: 11px;
+}
+
+div.homeCallout h3, div.sidebarCallout h3 {
+  height: 14px;
+  background-color: #093C71;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 7px 9px 9px 11px;
+  font-size: 0.9em;
+}
+
+div.sidebarCallout h3 {
+  height: auto;
+}
+
+.subpageSidebar img {
+  border-bottom: 9px solid #BDC491;
+}
+
+span.imageCaption {
+  font-size: 0.8em;
+  padding-left: 80px;
+  margin-top: -10px;
+  display: block;
+}
+
+span.imageCaption a {
+  text-decoration: underline;
+}
+
+.attorneyInfo {
+  color: #093C71;
+  font-family: FuturaBT-Medium;
+  line-height: 150%;
+}
+
+ul.subpageMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 20px;
+}
+
+ul.subpageMenu li {
+  width: 184px;
+  margin: 0 0 40px 9px;
+  float: left;
+}
+
+ul.subpageMenu li:first-child {
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+ul.subpageMenu li h4 {
+  background-color: #BDC491;
+  height: 42px;
+  margin: 0;
+  display: table;
+  #position: relative;
+  overflow: hidden;
+  font-size: 0.9em;
+  font-family: FuturaBT-Medium;
+}
+
+ul.subpageMenu li h4 a {
+  display: block;
+  width: 165px;
+  height: 42px;
+  padding-left: 11px;
+  padding-right: 8px;
+  #position: absolute;
+  #top: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+ul.subpageMenu li a img {
+  border: 0;
+}
+
+ul.subpageMenu li h4 a div {
+  #position: relative;
+  #top: -50%;
+}
+
+div.subpageMenus {
+  clear: both;
+}
+
+ul.childrenMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.childrenMenu h4 {
+  text-transform: none;
+}
+
+div.contactForm h4 {
+  margin-bottom: 5px;
+}
+
+div.contactForm input[type="text"], div.contactForm input[type="email"] {
+  width: 176px;
+  height: 17px;
+  line-height: 17px;
+  background: transparent url('../images/bg_formfield.png') no-repeat top left;
+  border: 1px solid #BDC491;
+  padding: 0;
+  position: relative;
+  left: 80px;
+  top: -16px;
+}
+
+div.contactForm textarea {
+  width: 433px;
+  height: 49px;
+  background: transparent url('../images/bg_textarea.jpg') no-repeat top left;
+  border: 1px solid #BDC491;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  left: 60px;
+  top: -16px;
+}
+
+div.contactForm label {
+  text-transform: uppercase;
+  color: #A9AE9B;
+  font-size: 0.9em;
+}
+
+div.contactForm .input {
+  width: 251px;
+}
+
+div.contactForm .textarea {
+  width: 497px;
+  position: relative;
+  left: 271px;
+  top: -67px;
+}
+
+div.contactForm .submit {
+  width: 435px;
+  position: relative;
+  top: -80px;
+  left: 331px;
+  margin-bottom: -80px;
+}
+
+div.socialLinks {
+  height: 75px;
+}
+
+div.socialLinks h4 {
+  margin-bottom: 5px;
+}
+
+a.socialLink {
+  display: block;
+  color: #A9AE9B;
+  padding-left: 37px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 30px;
+  float: left;
+  text-transform: uppercase;
+}
+
+a.socialLink:link, a.socialLink:visited {
+  text-decoration: none;
+}
+
+a.socialLink:hover {
+  text-decoration: underline;
+}
+
+div.newsSection {
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+div.newsSection strong {
+  font-family: FuturaBT-Medium;
+  color: #093C71;
+}
+
+div.newsSection h4 {
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+div.newsSection a:link, div.newsSection a:visited, div.newsSection a:hover {
+  color: #BDC491;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+div.newsSection.even {
+  background-color: transparent;
+}
+
+div.newsSection.odd {
+  background-color: #EEEFE3;
+}
+
+span.smallText {
+  text-transform: none;
+}
+
+form.attorneySearch {
+  background-color: #E3E5D2;
+  padding: 2px 15px 15px 15px;
+}
+
+form.attorneySearch h4 {
+  margin-bottom: 10px;
+}
+
+form.attorneySearch input[type="text"] {
+  margin-bottom: 10px;
+}
+
+form.attorneySearch div {
+  margin-top: 10px;
+}
+
+ul.alphaList {
+  list-style-type: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+ul.alphaList li {
+  display: block;
+  width: 21px;
+  margin-bottom: 7px;
+  float: left;
+  text-align: center;
+}
+
+ul.alphaList a {
+  font-family: FuturaBT-Medium;
+  text-decoration: underline;
+}
+
+p.viewAll {
+  clear: both;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+
+div.attorneyHeader {
+  font-family: FuturaBT-Medium;
+  clear: both;
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+div.attorneyListing {
+  clear: both;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #093C71;
+}
+
+div.attorneyListing div, div.attorneyHeader div {
+  width: 33%;
+  float: left;
+}
+
+.moreLink {
+  display: block;
+  text-align: right;
+  padding-top: 6px;
+}
+
+a.moreLink {
+  text-decoration: underline;
+}
+
+div.andOr {
+  margin-top: -2px !important;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
